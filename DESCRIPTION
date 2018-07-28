@@ -1,0 +1,28 @@
+Package: ooni
+Type: Package
+Title: Tools to Access the Open Observatory of Network Interference ('OONI')
+Version: 0.1.0
+Date: 2018-07-25
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: The 'Open Observatory of Network Interference' (<http://ooni.io/>) is 
+    a free software, global observation network for detecting censorship, 
+    surveillance and traffic manipulation on the internet. Tools are provided to
+    query the 'API' and download both bulk metadata and test observation data
+    files.
+URL: https://github.com/hrbrmstr/ooni
+BugReports: https://github.com/hrbrmstr/ooni/issues
+Encoding: UTF-8
+License: MIT
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0)
+Imports:
+    httr,
+    jsonlite
+RoxygenNote: 6.0.1.9000
