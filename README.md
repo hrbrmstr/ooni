@@ -13,6 +13,19 @@ surveillance and traffic manipulation on the internet. Tools are
 provided to query the ‘API’ and download both bulk metadata and test
 observation data files.
 
+## NOTE
+
+The OONI API is nice for cursory analysis or some integrations with
+other systems (e.g. OONI Explorer relies on it), but it’s currently not
+possible to run any dataset scan that runs for more than a minute using
+the OONI API. So the API is not the best option if the query does heavy
+scanning of metadata. Also, implementation of pagination in the OONI API
+next\_url is far from perfect and may fail with greater than zero
+offsets.
+
+The plan is to eventually support both API & S3 access from this
+package.
+
 ## What’s Inside The Tin
 
 The following functions are implemented:
